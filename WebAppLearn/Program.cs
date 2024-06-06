@@ -1,7 +1,11 @@
+using WebAppLearn.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddDbContext<DBContext>();
 
 var app = builder.Build();
 
